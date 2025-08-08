@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const API_BASE_URL = "https://admin.tonydesignconstruction.com";
   const homeProjectsContainer = document.getElementById("home-projects-gallery");
 
   const loader = document.createElement("div");
@@ -15,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(projectsData => {
       loader.remove();
 
-      console.log("Proyectos cargados (home):", projectsData);
       const shuffledProjects = [...projectsData].sort(() => 0.5 - Math.random());
       const selectedProjects = shuffledProjects.slice(0, 3);
 

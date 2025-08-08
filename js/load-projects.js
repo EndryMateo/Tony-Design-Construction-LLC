@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const API_BASE_URL = "https://admin.tonydesignconstruction.com";
   const allProjectsContainer = document.getElementById("all-projects-list");
 
   fetch(`${API_BASE_URL}/api/projects`)
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
         `;
 
+        // ✅ Evento para abrir modal con todas las imágenes
         card.addEventListener("click", () => {
           const modal = document.getElementById("project-modal");
           const modalImages = document.getElementById("modal-images");
@@ -37,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         allProjectsContainer.appendChild(card);
       });
 
+      // ✅ Cierre del modal
       const modal = document.getElementById("project-modal");
       const closeBtn = document.querySelector(".close-btn");
 
@@ -50,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
 
+      // ✅ Activar animación
       setTimeout(() => {
         document.querySelectorAll('.fade-in').forEach(el => el.classList.add('show'));
       }, 100);
