@@ -1,7 +1,7 @@
 // config.js
 
 // ✅ BACKEND EN PRODUCCIÓN (Render)
-const API_BASE_URL = "https://tony-construction-backend.onrender.com";
+const API_BASE_URL = "https://admin.tonydesignconstruction.com";
 
 // ✅ Si decides usar subdominio en el futuro:
 // const API_BASE_URL = "https://admin.tonydesignconstruction.com";

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_BASE_URL = "https://tony-construction-backend-1.onrender.com";
   const homeProjectsContainer = document.getElementById("home-projects-gallery");
 
   const loader = document.createElement("div");
@@ -11,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   loader.style.margin = "2rem 0";
   homeProjectsContainer.before(loader);
 
-  fetch(`${API_BASE_URL}/projects`)
+  fetch(`${API_BASE_URL}/api/projects`)
     .then(response => response.json())
     .then(projectsData => {
       loader.remove();
