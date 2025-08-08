@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TONY Design Construction LLC</title>
+
+    <!-- ✅ Favicon -->
+    <link
+      rel="icon"
+      href="images\tony_favicon_circular.ico"
+      type="image/x-icon"
+    />
+
+    <!-- ✅ Meta Description -->
+    <meta
+      name="description"
+      content="Experts in flooring, kitchen & bath remodels, and electrical solutions. Tony Design Construction LLC turns your ideas into reality."
+    />
+
+    <!-- ✅ Structured Data (Organization & Logo) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Tony Design Construction LLC",
+        "url": "https://tonydesignconstruction.com",
+        "logo": "https://tonydesignconstruction.com/images/logo.png"
+      }
+    </script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/projects.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-box">
+          <a href="#"
+            ><img src="images/logo.png" alt="Tony Logo" class="logo-img"
+          /></a>
+        </div>
+
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars open-icon"></i>
+          <i class="fas fa-times close-icon"></i>
+        </div>
+
+        <nav id="navbar">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Our Projects</a>
+          <a href="#contact">Contact</a>
+          <a class="nav-cta" href="#contact">Get a Quote</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <span class="company-name">Tony Design Construction LLC</span>
+          <h1>We build your ideas into reality</h1>
+          <p>
+            Experts in flooring, kitchen & bath remodels, and electrical
+            solutions.
+          </p>
+          <a href="#contact" class="btn-hero">Get a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h2>Our Services</h2>
+      <div class="services-grid">
+        <div class="service-card fade-in">
+          <i class="fas fa-hammer service-icon"></i>
+          <h3>General Construction</h3>
+          <p>From framing to finish, we build with precision and quality.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <i class="fas fa-ruler-combined service-icon"></i>
+          <h3>Floor Installation</h3>
+          <p>Durable and stylish floors for every space in your home.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <i class="fas fa-bolt service-icon"></i>
+          <h3>Electrical Solutions</h3>
+          <p>Safe, efficient, and code-compliant electrical services.</p>
+        </div>
+
+        <div class="service-card fade-in">
+          <i class="fas fa-sink service-icon"></i>
+          <h3>Kitchen & Bath Remodeling</h3>
+          <p>Modern renovations that combine functionality and beauty.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <h2>Our Projects</h2>
+      <div id="projects-loader">Cargando proyectos...</div>
+      <div id="projects-container" class="fade-in"></div>
+
+      <div id="home-projects-gallery" class="project-gallery"></div>
+
+      <div class="see-more-wrapper">
+        <a href="all-projects.html" class="see-more-button">See All Projects</a>
+      </div>
+    </section>
+
+    <section class="contact-section fade-in" id="contact">
+      <div class="contact-container">
+        <div class="contact-card">
+          <div class="contact-info-block">
+            <h2>Contact Us</h2>
+            <p class="contact-subtitle">
+              We're based in The Bronx, NY. Get in touch through:
+            </p>
+
+            <p>
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@tonydesignconstruction.com"
+                >info@tonydesignconstruction.com</a
+              >
+            </p>
+            <p>
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+1-000-000-0000">+1 (347) 712 9828</a>
+            </p>
+
+            <div class="social-icons">
+              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="#" target="_blank"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48365.31094588317!2d-73.9229114!3d40.8447818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f435e0b56715%3A0xa3c4cb21bd0d8a4b!2sThe%20Bronx%2C%20NY!5e0!3m2!1sen!2sus!4v1689368437201!5m2!1sen!2sus"
+              width="100%"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-logo">
+          <img src="images/logo.png" alt="Tony Design Construction LLC Logo" />
+        </div>
+
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-info">
+          <p>&copy; 2025 Tony Design Construction LLC. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <div id="project-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <div id="modal-images" class="modal-images"></div>
+        <p id="modal-description"></p>
+      </div>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init("adzHv00qCU9L-6GZk");
+      })();
+    </script>
+
+    <script src="js/config.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/render-home-projects.js"></script>
+  </body>
+</html>

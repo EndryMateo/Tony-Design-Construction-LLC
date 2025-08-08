@@ -1,0 +1,6 @@
+# Ignora archivos temporales o innecesarios
+.DS_Store
+node_modules/
+*.log
+.env
+*.zip
