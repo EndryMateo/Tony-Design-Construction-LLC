@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_BASE_URL = "https://admin.tonydesignconstruction.com";
   const homeProjectsContainer = document.getElementById("home-projects-gallery");
 
   const loader = document.createElement("div");

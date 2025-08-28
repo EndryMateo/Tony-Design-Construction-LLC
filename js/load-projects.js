@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const API_BASE_URL = "https://admin.tonydesignconstruction.com";
   const allProjectsContainer = document.getElementById("all-projects-list");
 
   fetch(`${API_BASE_URL}/api/projects`)
